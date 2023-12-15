@@ -1,0 +1,57 @@
+mixin pokeCardForm(pokemonCard, actionURL, mode, title)
+
+    div.form-panel
+        div.header= title
+            form(action=actionURL method='post')
+                div.form-input
+                    label(for='name') Name:
+                    input(type='text' id='name' name='name' value=pokemonCard.name)
+                div.form-input
+                    label(for='hp') HP:
+                    select(id='hp' name='hp' autocomplete='off')
+                        -for (let i = 40; i < 141; i++)
+                            option(value=i select = (hp === pokemonCard.hp)) #{i}
+                div.form-input
+                    label(for='typeImage') Type:
+                    select(id='typeImage' name='typeImage' autocomplete='off')
+                        each typeImage in typeImages
+                            option(value=typeImage select=(typeImage === pokemonCard.typeImage)) #{typeImage}
+                div.form-input
+                    label(for='pokemonimage') Pokemon Image URL:
+                    input(type='pokemonimage' id='pokemonimage' name='pokemonimage' value=pokemonCard.pokemonimage)
+                div.form-input
+                    label(for='movename') Move Name:
+                    input(type='movename' id='movename' name='movename' value=pokemonCard.movename)
+                div.form-input
+                    label(for='movetype') Move Type:
+                    select(id='movetype' name='movetype' autocomplete='off')
+                        each movetype in movetypes
+                            option(value=movetype select=(movetype === pokemonCard.movetype)) #{movetype}
+                div.form-input
+                    label(for='movepower') Move Power:
+                    select(id='movepower' name='movepower' autocomplete='off')
+                        -for(let i = 30; i<71; i++)
+                            option(value=i select = (movepower === pokemonCard.movepower)) #{i}
+                div.form-input
+                    label(for='movename2') Move Name 2:
+                    input(type='movename2' id='movename2' name='movename2' value=pokemonCard.movename2)
+                div.form-input
+                    label(for='movepower2') Move Power 2:
+                    select(id='movepower2' name='movepower2' autocomplete='off')
+                        -for (let i = 50; i < 121; i++)
+                                            option(value=i select = (movepower2 === pokemonCard.movepower2)) #{i}
+                div.form-input
+                    label(for='resistance') Resistance:
+                    select(id='resistance' name='resistance' autocomplete='off')
+                        each resistance in resistances
+                            option(value=resistance select=(resistance === pokemonCard.resistance)) #{resistance}
+                div.form-input
+                    label(for='weakness') Weakness:
+                    select(id='weakness' name='weakness' autocomplete='off')
+                        each weakness in weaknesss
+                            option(value=weakness select=(weakness === pokemonCard.weakness)) #{weakness}
+                div.button-row
+                    a.button.cancel(href='/') Cancel
+                    if (mode==='edit')
+                    a.button.delete(href=`/delete/${pokemonCard.id}`) Delete
+                    button.button.save(type='submit') Submit

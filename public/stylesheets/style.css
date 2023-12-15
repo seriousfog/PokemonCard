@@ -1,0 +1,204 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #f3f4f6;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.container {
+  padding: 48px;
+  gap: 16px;
+  flex-wrap: wrap;
+  display: flex;
+}
+.description{
+  font-size:14px;
+  border: 3px solid yellow;
+  border-radius: 2px;
+}
+.card {
+  background: #c2c1c1;
+  border-radius: 16px;
+  width: 350px;
+  height: 550px;
+  position: relative;
+  overflow: hidden;
+  border-top: 4px solid #1e0404;
+  border-bottom: 3px solid #1e0404;
+  border-right: 3px solid #1e0404;
+  border-left: 4px solid #210808;
+}
+.typeimage {
+  position: absolute;
+  width:40px;
+  border: black 4px solid;
+  border-radius: 50px;
+  right: 3px;
+}
+.pokemonimage{
+  border: black 4px solid;
+  position: relative;
+  top: 50px;
+  right: 20px;
+  left: 35px;
+  width: 80%
+}
+hp {
+  position: absolute;
+  font-size :26px;
+  top: 5px;
+  right: 55px;
+  color: black;
+}
+.card-title {
+  position: absolute;
+  color: black;
+  font-size: 26px;
+  top: 5px;
+  left: 30px;
+}
+
+.card-body {
+  font-size: 20px;
+}
+.moveType{
+  border-bottom: 3px solid black;
+}
+.moveType2{
+  border-bottom: 3px solid black;
+}
+.type{
+  border: 3px solid black;
+  border-radius: 50px;
+}
+.type2{
+  border: 3px solid black;
+  border-radius: 50px;
+}
+movename {
+  position: absolute;
+  left: 120px;
+}
+movepower {
+  position: absolute;
+  right: 20px;
+}
+movename2 {
+  position: absolute;
+  left: 120px;
+}
+movepower2 {
+  position: absolute;
+  right: 20px;
+}
+.bottomDesc {
+  border-radius: 20px 20px 0 0;
+  display:flex;
+  justify-content: space-around;
+  padding: 5px 0px 5px 0px;
+  align-content: center;
+}
+.res {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+.resistance{
+  border: 3px solid black;
+  border-radius: 50px;
+}
+
+.weak {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+.weakness{
+   border: 3px solid black;
+   border-radius: 50px;
+ }
+.ret {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+.retreat{
+  border: 3px solid black;
+  border-radius: 50px;
+}
+resdesc {
+  display: flex;
+}
+.description {
+  border-color: black;
+  border-radius: 5px;
+}
+.edit {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+.fire {
+  background: #ce3838;
+  border-top: 4px solid #650e0e;
+  border-bottom: 3px solid #650e0e;
+  border-right: 3px solid #650e0e;
+  border-left: 4px solid #650e0e;
+}
+.water {
+  background: #1c6caf;
+  border-top: 4px solid #1a218a;
+  border-bottom: 3px solid #1a218a;
+  border-right: 3px solid #1a218a;
+  border-left: 4px solid #1a218a;
+}
+.grass {
+  background: #1caf1e;
+  border-top: 4px solid #2c7714;
+  border-bottom: 3px solid #2c7714;
+  border-right: 3px solid #2c7714;
+  border-left: 4px solid #2c7714;
+}
+.normal {
+  background: #c2c1c1;
+  border-top: 4px solid #b4b9a0;
+  border-bottom: 3px solid #b4b9a0;
+  border-right: 3px solid #b4b9a0;
+  border-left: 4px solid #b4b9a0;
+}
+.fighting {
+  background: #833333;
+  border-top: 4px solid #591d1d;
+  border-bottom: 3px solid #591d1d;
+  border-right: 3px solid #591d1d;
+  border-left: 4px solid #591d1d;
+}
+.psychic {
+  background: #bf4dc7;
+  border-top: 4px solid #943ab7;
+  border-bottom: 3px solid #943ab7;
+  border-right: 3px solid #943ab7;
+  border-left: 4px solid #943ab7;
+}
+.steel {
+  background: #989298;
+  border-top: 4px solid #5a575b;
+  border-bottom: 3px solid #5a575b;
+  border-right: 3px solid #5a575b;
+  border-left: 4px solid #5a575b;
+}
+.dark {
+  background: #5d5757;
+  border-top: 4px solid #3c3a3d;
+  border-bottom: 3px solid #3c3a3d;
+  border-right: 3px solid #3c3a3d;
+  border-left: 4px solid #3c3a3d;
+}
+.ghost {
+  background: #7b3288;
+  border-top: 4px solid #4b1867;
+  border-bottom: 3px solid #4b1867;
+  border-right: 3px solid #4b1867;
+  border-left: 4px solid #4b1867;
+}
+
