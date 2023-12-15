@@ -12,10 +12,10 @@ mixin pokeCardForm(pokemonCard, actionURL, mode, title)
                         -for (let i = 40; i < 141; i++)
                             option(value=i select = (hp === pokemonCard.hp)) #{i}
                 div.form-input
-                    label(for='typeImage') Type:
-                    select(id='typeImage' name='typeImage' autocomplete='off')
-                        each typeImage in typeImages
-                            option(value=typeImage select=(typeImage === pokemonCard.typeImage)) #{typeImage}
+                    label(for='typeimage') Type:
+                    select(id='typeimage' name='typeimage' autocomplete='off')
+                        each typeimage in typeimages
+                            option(value=typeimage select=(typeimage === pokemonCard.typeimage)) #{typeimage}
                 div.form-input
                     label(for='pokemonimage') Pokemon Image URL:
                     input(type='pokemonimage' id='pokemonimage' name='pokemonimage' value=pokemonCard.pokemonimage)
